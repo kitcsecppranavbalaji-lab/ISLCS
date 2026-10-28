@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligent Street Lighting Control System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>s
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">💡 SmartLight</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#control" class="nav-link">Control</a>
+        <a href="#energy" class="nav-link">Energy</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 1. HOME ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Intelligent Street Lighting Control System</h1>
+          <p class="hero-intro">
+            A smart way to light our roads. The system turns street lights on and off,
+            adjusts their brightness based on traffic and people, and saves energy
+            without compromising safety.
+          </p>
+          <a href="#control" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+
+        <!-- Smart street lighting illustration (SVG) -->
+        <div class="hero-image" aria-hidden="true">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ffd27a" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#ffd27a" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="400" height="300" fill="#0d2a52"/>
+            <!-- Buildings -->
+            <rect x="10" y="150" width="50" height="150" fill="#16386b"/>
+            <rect x="65" y="120" width="60" height="180" fill="#1a4279"/>
+            <rect x="130" y="170" width="45" height="130" fill="#16386b"/>
+            <rect x="290" y="130" width="55" height="170" fill="#1a4279"/>
+            <rect x="350" y="160" width="50" height="140" fill="#16386b"/>
+            <!-- Windows -->
+            <g fill="#ffd27a" opacity="0.6">
+              <rect x="20" y="170" width="6" height="8"/><rect x="36" y="200" width="6" height="8"/>
+              <rect x="75" y="150" width="6" height="8"/><rect x="95" y="190" width="6" height="8"/>
+              <rect x="300" y="155" width="6" height="8"/><rect x="320" y="200" width="6" height="8"/>
+              <rect x="360" y="185" width="6" height="8"/>
+            </g>
+            <!-- Road -->
+            <rect x="0" y="260" width="400" height="40" fill="#0a1d3a"/>
+            <line x1="0" y1="280" x2="400" y2="280" stroke="#ffffff" stroke-width="3" stroke-dasharray="20 15" opacity="0.5"/>
+            <!-- Street lamps with glow -->
+            <g>
+              <line x1="100" y1="260" x2="100" y2="120" stroke="#cfd8e6" stroke-width="5"/>
+              <path d="M100 120 Q115 110 130 125" stroke="#cfd8e6" stroke-width="4" fill="none"/>
+              <circle cx="130" cy="128" r="60" fill="url(#glow)"/>
+              <circle cx="130" cy="128" r="6" fill="#ffd27a"/>
+            </g>
+            <g>
+              <line x1="260" y1="260" x2="260" y2="120" stroke="#cfd8e6" stroke-width="5"/>
+              <path d="M260 120 Q245 110 230 125" stroke="#cfd8e6" stroke-width="4" fill="none"/>
+              <circle cx="230" cy="128" r="60" fill="url(#glow)"/>
+              <circle cx="230" cy="128" r="6" fill="#ffd27a"/>
+            </g>
+            <!-- Car -->
+            <rect x="170" y="235" width="70" height="22" rx="6" fill="#ffffff"/>
+            <rect x="180" y="226" width="40" height="14" rx="4" fill="#cfd8e6"/>
+            <circle cx="185" cy="258" r="6" fill="#0a1d3a"/>
+            <circle cx="225" cy="258" r="6" fill="#0a1d3a"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. ABOUT PROJECT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About the Project</h2>
+        <p class="section-sub">What an intelligent street lighting system is and how it works.</p>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>What is it?</h3>
+            <p>
+              An Intelligent Street Lighting System uses sensors, a controller and a
+              monitoring dashboard to manage street lights automatically. Instead of
+              burning at full power all night, each light responds to what is happening
+              on the road.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>How it works</h3>
+            <ol class="steps">
+              <li><strong>Sense:</strong> sensors detect vehicles and pedestrians.</li>
+              <li><strong>Decide:</strong> the controller chooses the right brightness.</li>
+              <li><strong>Act:</strong> the lamp dims or brightens automatically.</li>
+              <li><strong>Monitor:</strong> energy use is tracked on a dashboard.</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3 class="sub-heading">Project Objectives</h3>
+        <div class="grid grid-3">
+          <div class="card objective">
+            <span class="icon">⚡</span>
+            <h4>Save energy</h4>
+            <p>Reduce electricity consumption by lowering light when no one is around.</p>
+          </div>
+          <div class="card objective">
+            <span class="icon">🛡️</span>
+            <h4>Keep people safe</h4>
+            <p>Full brightness whenever vehicles or pedestrians are detected.</p>
+          </div>
+          <div class="card objective">
+            <span class="icon">📊</span>
+            <h4>Monitor remotely</h4>
+            <p>Give city staff a clear view of light status and energy use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. FEATURES ===== -->
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-sub">Everything the system does to make roads brighter and greener.</p>
+
+        <div class="grid grid-3">
+          <div class="card feature">
+            <span class="icon">🔄</span>
+            <h4>Automatic Street Light Control</h4>
+            <p>Lights switch on at dusk and off at dawn without manual work.</p>
+          </div>
+          <div class="card feature">
+            <span class="icon">🚗</span>
+            <h4>Vehicle Detection</h4>
+            <p>Detects approaching vehicles and raises brightness along their path.</p>
+          </div>
+          <div class="card feature">
+            <span class="icon">🚶</span>
+            <h4>Pedestrian Detection</h4>
+            <p>Senses people on the footpath and lights the way for them.</p>
+          </div>
+          <div class="card feature">
+            <span class="icon">🔆</span>
+            <h4>Brightness Adjustment</h4>
+            <p>Dims lights to a comfortable level when the street is quiet.</p>
+          </div>
+          <div class="card feature">
+            <span class="icon">🌱</span>
+            <h4>Energy Saving</h4>
+            <p>Cuts electricity bills and reduces carbon emissions.</p>
+          </div>
+          <div class="card feature">
+            <span class="icon">📡</span>
+            <h4>Smart Monitoring</h4>
+            <p>Shows the status of every light and its energy use in one place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. STREET LIGHT CONTROL ===== -->
+    <section id="control" class="section">
+      <div class="container">
+        <h2 class="section-title">Street Light Control</h2>
+        <p class="section-sub">Try the controls. Changes apply instantly on this demo panel.</p>
+
+        <div class="control-card card">
+          <!-- Lamp preview -->
+          <div class="lamp-preview">
+            <div class="lamp-glow" id="lampGlow"></div>
+            <div class="lamp-icon" id="lampIcon">💡</div>
+          </div>
+
+          <!-- Status -->
+          <div class="status-row">
+            <span class="label">Current status</span>
+            <span class="status-pill" id="statusPill">ON</span>
+          </div>
+          <p class="status-text" id="statusText">Light is ON at 70% brightness.</p>
+
+          <!-- ON / OFF -->
+          <div class="control-block">
+            <span class="label">Power</span>
+            <div class="btn-group">
+              <button class="btn btn-primary" id="btnOn">Turn ON</button>
+              <button class="btn btn-outline" id="btnOff">Turn OFF</button>
+            </div>
+          </div>
+
+          <!-- Mode -->
+          <div class="control-block">
+            <span class="label">Mode</span>
+            <div class="btn-group">
+              <button class="btn btn-outline mode-btn active" id="btnAuto" data-mode="auto">Automatic</button>
+              <button class="btn btn-outline mode-btn" id="btnManual" data-mode="manual">Manual</button>
+            </div>
+          </div>
+
+          <!-- Brightness slider -->
+          <div class="control-block">
+            <div class="slider-head">
+              <span class="label">Brightness</span>
+              <span class="slider-value" id="brightnessValue">70%</span>
+            </div>
+            <input type="range" id="brightness" min="0" max="100" value="70" aria-label="Brightness">
+            <small class="hint" id="sliderHint">Slider works in Manual mode.</small>
+          </div>
+
+          <!-- Sensor readings -->
+          <div class="sensor-row">
+            <div class="sensor" id="vehicleSensor">🚗 Vehicle: <strong>Not detected</strong></div>
+            <div class="sensor" id="pedSensor">🚶 Pedestrian: <strong>Not detected</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. ENERGY MONITORING ===== -->
+    <section id="energy" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Energy Monitoring</h2>
+        <p class="section-sub">Sample data for a demonstration street of 24 lamps.</p>
+
+        <div class="grid grid-4">
+          <div class="card stat">
+            <span class="stat-label">Live load</span>
+            <span class="stat-value" id="liveLoad">0 kW</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-label">Used today</span>
+            <span class="stat-value">42.6 kWh</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-label">Estimated savings</span>
+            <span class="stat-value">31%</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-label">CO₂ avoided / week</span>
+            <span class="stat-value">18.4 kg</span>
+          </div>
+        </div>
+
+        <div class="card chart-card">
+          <div class="chart-head">
+            <h3>Weekly consumption (kWh)</h3>
+            <div class="legend">
+              <span><i class="dot dot-old"></i>Traditional</span>
+              <span><i class="dot dot-new"></i>Smart system</span>
+            </div>
+          </div>
+          <div class="chart" id="chart" aria-label="Weekly energy consumption chart"></div>
+          <p class="hint">Total saved this week: <strong id="weekSaved"></strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <div>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-sub">Have a question about the project? Send us a message.</p>
+        </div>
+
+        <form class="card contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error" id="nameError"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com">
+            <small class="error" id="emailError"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-success" id="formSuccess"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Intelligent Street Lighting Control System · College Mini-Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

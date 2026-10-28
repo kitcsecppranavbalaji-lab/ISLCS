@@ -1,0 +1,61 @@
+Intelligent Street Lighting Control System
+
+Project Description
+
+The Intelligent Street Lighting Control System is a smart solution designed to reduce electricity consumption by automatically controlling street-light brightness based on vehicle and pedestrian movement.
+
+The system helps save energy, improve efficiency, and support smart city development.
+
+Features
+
+- Automatic Street Light Control
+- Manual ON/OFF Control
+- Brightness Adjustment
+- Vehicle Detection (Demo)
+- Pedestrian Detection (Demo)
+- Energy Consumption Monitoring
+- Energy Saving Statistics
+- Responsive Website Design
+
+Technologies Used
+
+- HTML – Website Structure
+- CSS – Website Styling
+- JavaScript – Interactive Features
+
+Project Structure
+
+Intelligent-Street-Lighting/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+How to Run the Project
+
+1. Download or extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Make sure all three files are in the same folder.
+4. Open "index.html" in your browser.
+5. You can also use the Live Server extension in VS Code.
+
+How It Works
+
+1. The system detects vehicle or pedestrian movement using demonstration data.
+2. When movement is detected, the street light brightness increases.
+3. When no movement is detected, brightness decreases.
+4. Users can manually control the lights using ON/OFF buttons.
+5. Energy monitoring displays estimated electricity savings.
+
+Future Enhancements
+
+- Real-time vehicle detection using AI.
+- IoT-based street light control.
+- ESP32 hardware integration.
+- Live camera monitoring.
+- Cloud-based energy monitoring.
+
+Conclusion
+
+The Intelligent Street Lighting Control System provides a simple and effective approach to reducing electricity wastage. It demonstrates how smart technology can improve street-light management and support energy-efficient smart cities.
